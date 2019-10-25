@@ -6,9 +6,9 @@ public class BST<T extends Comparable<T>>
 	}
 	private void print(Node node) {//Helper function for printing the tree
 		if (node != null) {
-			print(node.right);
-			System.out.println(node.data);
 			print(node.left);
+			System.out.println(node.data);
+			print(node.right);
 		}
 	}
 	public boolean find(Comparable item) {
